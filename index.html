@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Kibria</title>
+    <!-- connects the index and style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <nav>    
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food-blog/index.html">Blog</a></li>
+                <li><a href="golf-page/index.html">Golf Journey</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <section>
+        <div class= "flex-container"> 
+            <img height="400ppx" width="300ppx" src="./home/images/selfie.jpeg">
+            <div class="text-container">
+                <h1> Anna Kibria </h1>
+                <p> Hi, I’m Anna, welcome to my website. This space is a collection of the things I’m most passionate about, from exploring Edmonton’s food scene to tracking my progress and achievements on the golf course. Whether I’m trying a new restaurant or working on my swing, I love documenting the journey and sharing honest experiences along the way.</p>
+
+                <!-- cta = call to action -->
+                <a href="https://www.instagram.com/annakibria/?hl=en" class="cta-button">Follow me on instagram </a> 
+            </div>
+        </div>
+    </section>
+
+    <section>
+            <div class="flex-container"> <!-- by using the same class, our layout will stay consistent with header and we dont need to do another thing is style.css-->
+                    <div class="text-container">
+                        <h2>Anna Eats 🍽️</h2>
+                        <p>Anna Eats is my food blog where I explore and review restaurants around Edmonton. I share honest opinions on the food, atmosphere, and experience, along with photos and a growing map of every place I’ve visited and logged. The goal is to highlight local spots, discover new favourites, and help others find great places to eat.</p>
+                    </div>
+                    <img width="350px" src="./home/images/fairmont-menu.jpeg">
+            </div>
+    </section>
+
+    <section>
+        <h2>My Golf Journey</h2>
+        <p>My Golf Journey page is where I track my growth and achievements in golf. From personal milestones to competitive highlights, this page showcases my dedication to improving my skills and learning more about the game. It’s a snapshot of my progress, challenges, and successes as I continue to develop as a golfer.</p>
+        <div class="grid-container">
+            <img style="grid-area: img-1" src="./home/images/Blackhawk-background.jpeg">
+            <img style="grid-area: img-2" src="./home/images/pandas-team.jpeg">
+            <img style="grid-area: img-3" src="./home/images/golf-closeup.jpeg">
+            <img style="grid-area: img-4" src="./home/images/california-golf.jpeg">
+            <img style="grid-area: img-5" src="./home/images/putting-closeup.jpeg">
+            <img style="grid-area: img-6" src="./golf-page/images/golf-background.jpeg">
+        </div>
+    </section>
+    <!--
+    <section>
+        <h2>Common questions</h2>
+        <details>
+            <summary>How much does it cost</summary>
+            <p>this is some more filler paragraph so this is longer. this is some more filler paragraph so this is longer.
+                this is some more filler paragraph so this is longer. this is some more filler paragraph so this is longer. 
+                this is some more filler paragraph so this is longer. this is some more filler paragraph so this is longer.
+            </p>
+        </details>
+        <details>
+            <summary>What else can you do</summary>
+            <p>this is some more filler paragraph so this is longer. this is some more filler paragraph so this is longer.
+                this is some more filler paragraph so this is longer. this is some more filler paragraph so this is longer. 
+                this is some more filler paragraph so this is longer. this is some more filler paragraph so this is longer.
+            </p>
+        </details>
+        <details>
+            <summary>I dont know what else to say here</summary>
+            <p>this is some more filler paragraph so this is longer. this is some more filler paragraph so this is longer.
+                this is some more filler paragraph so this is longer. this is some more filler paragraph so this is longer. 
+                this is some more filler paragraph so this is longer. this is some more filler paragraph so this is longer.
+            </p>
+        </details>
+    </section>
+-->
+    <footer>
+        <a href="">LinkedIn</a>
+        <a href="#my-work">Git Hub</a>
+        <a href="mailto:annakibria@gmail.com">Contact</a>  
+    </footer>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    
+</body>
+</html>
