@@ -1,0 +1,132 @@
+:root {
+    --base-color: #ffffff; 
+    --text-color: #000000; 
+    --primary-color: #ffc06e;
+    --secondary-color: #8D8DFF;
+    --color-1: #F9F6F3;
+    --color-2: #F3F7F9;
+    --color-3: #F6F3F9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header, section {
+    margin: 2em auto; 
+    width: min(75em, 100%);
+    background-color: var(--color-1);
+    padding: 2em;
+    /* adds the curve on the box */ 
+    border-radius: 1em;
+}
+
+body{
+   min-height: 100vh; 
+   background-color: var(--base-color);
+   background-size: cover; 
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100;
+    padding: 1em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    background-color: #f0f0f0;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.grid-container{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr); /*how many columns we want to have, here 
+    4 collumns each 1 fraction of the available space */
+    grid-template-rows:repeat(2, 200px);
+    grid-template-areas:
+    "img-3 img-2 img-1 img-5"
+    "img-3 img-2 img-4 img-5";
+    gap: 1em;
+}
+
+.grid-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+    transition: 100ms ease;
+}
+
+.flex-container{
+    display: flex; /* display elements side by side */
+    justify-content: center; /* alligns everything horizontally in the center */ 
+    align-items: center;  /* alligns everything vertically in the center */
+    flex-wrap: wrap;  /* allows to stack on smaller screens */
+    gap: 3em;
+}
+
+.flex-container img{
+    border-radius: 1em;
+}
+
+.text-container{ 
+    flex: 0 1 34em; /* grow behaviour, shrink (set to one = shrink if needed), preferred width */
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.text-container p {
+    margin: .75em 0 1em 0; 
+    font-size: 1.25rem;
+}
+
+.liz-grid-container{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    width: 100%;
+    grid-template-columns:repeat(3, 1fr); /*how many columns we want to have, here 
+    4 collumns each 1 fraction of the available space */
+    grid-template-rows:repeat(2, 200px);
+    grid-template-areas:
+    "img-3 img-1 img-2"
+    "img-3 img-1 img-4";
+    gap: 1em;
+}
+
+.liz-grid-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+    transition: 100ms ease;
+}
